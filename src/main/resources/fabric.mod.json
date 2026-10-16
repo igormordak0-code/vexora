@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "vexora",
+  "version": "${version}",
+  "name": "VEXORA Client GUI",
+  "description": "Purple and black cosmetic GUI for Minecraft 1.21.4. No gameplay cheats.",
+  "authors": [
+    "VEXORA"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/vexora/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.g4ngar_.VEXORAClient"
+    ],
+    "fabric-datagen": [
+      "net.g4ngar_.VEXORAClientDataGenerator"
+    ],
+    "client": [
+      "net.g4ngar_.VEXORAClientEntrypoint"
+    ]
+  },
+  "mixins": [
+    "vexora.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
